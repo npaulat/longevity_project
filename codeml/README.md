@@ -1,10 +1,10 @@
 ## Setting up
 <br>
 
-  1. Run codeml_input.py to generate the control files for the CodeML runs. <br>
+  1. Run **codeml_input.py** to generate the control files for the CodeML runs. <br>
   * Set up bash loop for creating these files based on lists of gene sequence alignment files and the appropriate tree file. <br>
-  * Use the unrooted_tree.nwk file as base (need to use unrooted trees in CodeML runs). <br>
-    * To make the unrooted_tree.nwk (or to modify it) in R, use ape. <br>
+  * Use the **unrooted_tree.nwk** file as base (need to use unrooted trees in CodeML runs). <br>
+    * To make the **unrooted_tree.nwk** (or to modify it) in R, use ape. <br>
     ```
     library(ape)
     
@@ -34,4 +34,6 @@
   * Alternative model is that different branches have different selection signals (foreground =/= background). <br>
   * CodeML is installed as a python submodule of Biopython.PAML (see doc: (https://biopython.org/wiki/PAML)). <br>
 
-  3. Run likelihood_test.py (which imports lrt_construction.py) to process and reformat CodeML output. <br>
+  3. Run **likelihood_test.py** (which imports lrt_construction.py) to process and reformat CodeML output. <br>
+  
+  * Modify **likelihood_test_example.py** to have correct directory name/path, alignment file, and path to lrt_construction.py
