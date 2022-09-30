@@ -6,7 +6,6 @@
     * To make the unrooted_tree.nwk (or to modify it) in R, use ape <br>
     ```
     library(ape)
-
     bat_tr=read.tree("03.16.22_tree.tre")
     bat_rooted=(root(bat_tr, 16:17, resolve.root = TRUE))
     is.rooted(bat_rooted)
@@ -19,7 +18,7 @@
     is.rooted(bat2) + nodelabels(frame = "r", bg = "yellow", adj = 0)
     write.tree(bat2, file="unrooted_tree.nwk")
     ```
-    
+    <br>
     * Remove the #1 from the ancestral bat branch if need to reroot tree to human/mouse outgroups, then unroot again <br>
     * Move #1 from the ancestral bat branch to the base of Vespertilionidae (can do in tree view to make sure it's on the correct node) <br>
       * This is for selection testing if Vespertilionid bats have a different signal than other bats <br>
