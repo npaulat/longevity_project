@@ -7,6 +7,7 @@
     * To make the unrooted_tree.nwk (or to modify it) in R, use ape. <br>
     ```
     library(ape)
+    
     bat_tr=read.tree("03.16.22_tree.tre")
     bat_rooted=(root(bat_tr, 16:17, resolve.root = TRUE))
     is.rooted(bat_rooted)
