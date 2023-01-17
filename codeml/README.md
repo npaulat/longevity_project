@@ -26,6 +26,13 @@
       * This is for selection testing if Vespertilionid bats have a different signal than other bats. <br>
     * Move #1 from the ancestral bat branch to the base of each short-lived species (1 per tree, for pairwise comparisons). <br>
       * This is for selection testing to determine if short-lived species have different signal from the long-lived species. <br>
+    
+    To create the five different foreground node labeled trees for each gene alignment file that does not have all 30 species, run **reroot_label_nwk_trees.R** on the command line, looping through the individual gene alignment clipped tree files (e.g. ENST00000374900.FAAH2.cleanLb_hmm_manual.fasta.nwk)
+    ```
+    cd /lustre/scratch/npaulat/selection/trees/
+    for i in *.nwk; do Rscript /lustre/scratch/npaulat/selection/reroot_label_nwk_trees.R ${i}; done
+    ```
+    <br>
 
   2. Run CodeML
 
