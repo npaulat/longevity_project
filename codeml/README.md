@@ -18,9 +18,10 @@ CodeML requires a rooted Newick tree with labeled nodes/branches for testing dif
 
   1. Make or obtain a phylogenetic tree with branch length information, convert to Newick format.
       * In this case, the [phylogenetic tree](https://hackmd.io/6RsnHiNGTL69qaed5xcg1g) Diana and I used was made by Graham (need to get methods info). Contains bootstrap support values, though not needed here.
-<br>
+
   2. Reroot tree if necessary (yes).
-        * To make the [**rooted_tree.nwk**](https://hackmd.io/St77zA2MSXyN21bNMUAbOw) (or to modify it) in R, use ape and ggtree. 
+        * To make the [**rooted_tree.nwk**](https://hackmd.io/St77zA2MSXyN21bNMUAbOw) (or to modify it) in R, use ape and ggtree.
+      
             ```
             library(ape)
             library(treeio)
