@@ -50,11 +50,11 @@ CodeML requires a rooted Newick tree with labeled nodes/branches for testing dif
             #is.rooted(bat2) # <- programatic check, should return "FALSE"
             write.tree(bat2, file="unrooted_tree.nwk")
             ```
-  3. Make labeled trees, one for each hypothesis to test, using [**reroot_label_nwk_trees.R**](https://hackmd.io/sJelYIlLRq6-rbZWYbFpVg).
-     * To create the five different foreground node labeled trees for each gene alignment file that does not have all 30 species, run **reroot_label_nwk_trees.R** on the command line, looping through the individual gene alignment clipped tree files (e.g. ENST00000374900.FAAH2.cleanLb_hmm_manual.fasta.nwk).
+  3. Make labeled trees, one for each hypothesis to test, using [**reroot_label_nwk_trees2.R**](https://hackmd.io/sJelYIlLRq6-rbZWYbFpVg).
+     * To create the five different foreground node labeled trees for each gene alignment file that does not have all 30 species, run **reroot_label_nwk_trees2.R** on the command line, looping through the individual gene alignment clipped tree files (e.g. ENST00000374900.FAAH2.cleanLb_hmm_manual.fasta.nwk).
         ```
         cd /lustre/scratch/npaulat/selection/trees/
-        for i in *.nwk; do Rscript /lustre/scratch/npaulat/selection/reroot_label_nwk_trees.R ${i}; done
+        for i in *.nwk; do Rscript /lustre/scratch/npaulat/selection/reroot_label_nwk_trees2.R ${i}; done
         ``` 
        * If all of your files contain the same species, you only need one tree for each hypothesis (5), as opposed to gene-specific trees for each hypothesis(# of genes * 5).
      * Hypotheses:
