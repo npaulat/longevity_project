@@ -9,7 +9,7 @@ Originally I was supposed to run CodeML just for genes in the DNA repair and TE 
 ## Setting up
 
 ### Sorting Gene Alignments
-To identify gene alignment files with <30 species represented, and exclude any not meeting the basic species representation criteria, I made the *gene_alignment_sorting.py* script. It produces the output alignment_tree_grouping.txt, which is a list of alignment files that meet filtering standards and are grouped by the species present in the alignment. This is mainly informational, the main point is to get the filtered list of alignment files.
+To identify gene alignment files with <30 species represented, and exclude any not meeting the basic species representation criteria, I made the [**gene_alignment_sorting.py**](https://github.com/npaulat/longevity_project/blob/5e4986ceb9e67fb0c33162962ba2e8d4008f479b/codeml/gene_alignment_sorting.py) script. It produces the output alignment_tree_grouping.txt, which is a list of alignment files that meet filtering standards and are grouped by the species present in the alignment. This is mainly informational, the main point is to get the filtered list of alignment files.
   * Minimum species criteria:
     * All species used in the longevity comparison pairs (8 total)
     * At least one representative from each of the 8 bat families included in the study (excluding Rhinopomidae, due to lack of relevant longevity info)
